@@ -14,7 +14,6 @@ function App() {
  
 
   useEffect(()=>{
-    console.log("Called once refereshed");
     getLocalToDos();
   }, []);
 
