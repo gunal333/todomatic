@@ -17,8 +17,8 @@ const form =({setInputText,toDos,setToDos,inputText,setStatus}) => {
     };
     return(
         <form>
-      <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
-      <button onClick={submitToDoHandler} className= "todo-button" type="submit">
+      <input value={inputText}  onChange={inputTextHandler} type="text" className="todo-input" />
+      <button onClick={submitToDoHandler} disabled = {!inputText ? true: false} className= "todo-button" type="submit">
         <i className="fas fa-plus-square"></i>
       </button>
       <div className="select">
